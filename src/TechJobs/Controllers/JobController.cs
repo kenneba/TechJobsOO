@@ -50,7 +50,7 @@ namespace TechJobs.Controllers
             if (ModelState.IsValid)
             {
                 Job newJob = new Job
-                {   
+                {
                     Name = newJobViewModel.Name,
                     Employer = jobData.Employers.Find(int.Parse(newJobViewModel.EmployerID.Value)),
                     CoreCompetency = jobData.CoreCompetencies.Find(newJobViewModel.CoreCompetency.ID),
