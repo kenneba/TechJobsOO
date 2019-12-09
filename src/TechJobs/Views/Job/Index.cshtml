@@ -1,41 +1,36 @@
-﻿@*@model TechJobs.Models.Job;*@
-
-@model TechJobs.ViewModels.NewJobViewModel
+﻿@model TechJobs.Models.Job
 
 @{
-// COMPLETE #2.1- declare the ViewModel (outside of this @{ } block)
+    // COMPLETE #2.1- declare the ViewModel (outside of this @{ } block)
 }
 
-@{ 
-
-            @*@foreach (var job in Model.Jobs)*@
-{
-                <table class="job-listing">
-                    <tr>
-                        <td>Name</td>
-                        <td>@Model.Name</td>
-                    </tr>
-                    <tr>
-                        <td>Employer</td>
-                        <td>@Model.EmployerID</td>
-                    </tr>
-                    <tr>
-                        <td>Location</td>
-                        <td>@Model.Location</td>
-                    </tr>
-                    <tr>
-                        <td>Skill</td>
-                        <td>@Model.CoreCompetency</td>
-                    </tr>
-                    <tr>
-                        <td>Position Type</td>
-                        <td>@Model.PositionType</td>
-                    </tr>
-                </table>
+@{
+        <table class="job-listing">
+            <tr>
+                <td>Name</td>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <td>Employer</td>
+                <td>@Model.Employer</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>@Model.Location</td>
+            </tr>
+            <tr>
+                <td>Skill</td>
+                <td>@Model.CoreCompetency</td>
+            </tr>
+            <tr>
+                <td>Position Type</td>
+                <td>@Model.PositionType</td>
+            </tr>
+        </table>
     }
-       
-           // TODO #2.2 - display the job fields, one per row (outside of this @{ } block)
 
-       
-  }
-            
+
+        
+
+
+        }
